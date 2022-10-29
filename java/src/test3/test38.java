@@ -9,6 +9,7 @@ public class test38 {
         final int NRATE = 6;
 
         double  []interestRate = new double[NRATE];
+        
         for (int j = 0; j < interestRate.length; j++) {
             interestRate[j] = (STRATE + j) / 100;
         }
