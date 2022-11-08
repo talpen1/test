@@ -1,5 +1,4 @@
 package test4;
-import java.time.LocalDate;
 import java.util.Random;
 
 class Employee2 {
@@ -25,6 +24,7 @@ class Employee2 {
     public String getName() {
         return name;
     }
+
 
     public static int getNextID() {
         return nextID;

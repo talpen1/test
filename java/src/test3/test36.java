@@ -21,14 +21,11 @@ public class test36 {
         int[]result =new int[k];
         for(int i=0;i<result.length;i++)
         {
-
             System.out.println(calcArea(2,3));
             int r=(int)(Math.random()*n);
             result[i]=number[r];
             System.out.println(result[i]);
             number[r]=number[n-1];
-
-
         }
 
 
