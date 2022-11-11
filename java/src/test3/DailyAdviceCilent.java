@@ -14,7 +14,7 @@ import java.net.Socket;
 public class DailyAdviceCilent {
     public void go () throws IOException {
         try{
-        Socket s= new Socket("172.0.0.1",4242);
+        Socket s= new Socket("127.0.0.1",4242);
         InputStreamReader streamReader=new InputStreamReader(s.getInputStream());
         BufferedReader reader= new BufferedReader(streamReader);
 
