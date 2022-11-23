@@ -1,18 +1,17 @@
 package test4;
 import java.util.Random;
 
-class Employee2 {
+ class Employee2 {
     private final String name;
     private double salary;
     private int id;
-   private static int nextID=1;
+    private static int nextID=1;
 
     static
 {
     Random generator =new Random();
     nextID=generator.nextInt(10000);
 }
-
 
     public Employee2 (String n, double s)
     {
@@ -47,31 +46,5 @@ class Employee2 {
     }
 
 
-}
-
-class Employee3
-{
-    private String name;
-    private double salary;
-
-    public Employee3 (String n,Double s)
-    {
-        name=n;
-        salary=s;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Double getSalary() {
-        return salary;
-    }
-
-    public void raiseSalary(double byPrsent)
-    {
-        double raise=salary*byPrsent/100;
-        salary+=raise;
-    }
 }
 
