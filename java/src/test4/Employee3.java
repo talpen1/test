@@ -21,4 +21,12 @@ public class Employee3 {
         double raise = salary * byPrsent / 100;
         salary += raise;
     }
+
+    @Override
+    public String toString() {
+        return "Employee3{" +
+                "name='" + name + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
