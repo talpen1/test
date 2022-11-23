@@ -15,7 +15,7 @@ public class MapTest {
 
     public static void main(String[] args)
     {
-        Map<Object, Object> staff=new HashMap<>();
+        Map<String,Employee3 > staff=new HashMap<>();
         staff.put("144-25-5464",new Employee3("talpen0",7000.0));
         staff.put("144-25-5465",new Employee3("talpen1",8000.0));
         staff.put("144-25-5466",new Employee3("talpen2",9000.0));
@@ -26,7 +26,7 @@ public class MapTest {
         staff.remove("144-25-5464");
         staff.put("144-25-5468",new Employee3("talpen4",6000.0));
         System.out.println(staff);
-        System.out.println(staff.get("144-25-5467"));
+        System.out.println(staff.get("144-25-5467").getName());
       //  System.out.println(staff.getOrDefault("144-25-5468", .getName()));
 
         staff.forEach((k,v)->
