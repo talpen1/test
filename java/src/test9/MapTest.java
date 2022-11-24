@@ -21,7 +21,7 @@ public class MapTest {
         staff.put("144-25-5466",new Employee3("talpen2",9000.0));
         staff.put("144-25-5467",new Employee3("talpen3",6000.0));
 
-        System.out.println(staff);
+       // System.out.println(staff);
 
         staff.remove("144-25-5464");
         staff.put("144-25-5468",new Employee3("talpen4",6000.0));
