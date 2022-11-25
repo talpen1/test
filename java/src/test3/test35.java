@@ -24,5 +24,7 @@ public class test35 {
             years++;
         }
         System.out.println("you can retire in " + years + "  years");
+        System.out.println(Runtime.getRuntime().availableProcessors());
+        System.out.println(Runtime.getRuntime().maxMemory()/1024/1024/1024);
     }
 }
