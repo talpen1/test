@@ -11,34 +11,25 @@ import java.util.Scanner;
 public class moneyStr {
     public static void main(String[] args) {
         Scanner in =new Scanner(System.in);
-        int money;
-        while (true) {
-            System.out.println("请输入一个数字");
-            money=in.nextInt();
-            if(money>=0 &&money<=9999999)
-                break;
-            else
-                System.out.println("金额无效");
-        }
+        System.out.println("请输入金额");
+        int MoneyNum=in.nextInt();
 
-        String moneySTr="";
-
+        String toArr="";
         while (true) {
-            int ge =money%10;
-            String moneyCapital="";
-            moneyCapital=getCapitalNumber(ge);
-            moneySTr=moneyCapital+moneySTr;
-            money=money/10;
-            if(money==0)
+            int num=MoneyNum%10;
+            toArr=toCapital(num)+toArr;
+
+            MoneyNum=MoneyNum/10;
+            if(MoneyNum==0)
                 break;
         }
-        System.out.println(moneySTr);
-
-
+        System.out.println(toArr);
 
     }
-    public static String getCapitalNumber(int num){
-        String[]arr={"零","壹","贰","仨","肆","伍","陆","柒","捌","玖"};
-        return arr[num];
+    public static String toCapital(int number){
+        String []arr={"零","壹","贰","叁","肆","伍","陆","琦","捌","玖",};
+        return arr[number];
     }
+
+
 }
