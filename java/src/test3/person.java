@@ -33,4 +33,12 @@ public class person {
     public void show(){
         System.out.println( name+","+ age);
     }
+
+    @Override
+    public String toString() {
+        return "person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

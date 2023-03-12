@@ -1,6 +1,5 @@
 package test5;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class arreyListTest {
@@ -19,5 +18,6 @@ public class arreyListTest {
         {
             System.out.println(e.getName()+e.getSalary()+e.getHireDay());
         }
+       // System.out.println(staff);
     }
 }

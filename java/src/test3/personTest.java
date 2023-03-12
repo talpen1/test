@@ -15,6 +15,8 @@ public class personTest {
         rejector(t);
         rejector(a);
 
+
+
     }
     public  static void  rejector(person p){
         p.show();

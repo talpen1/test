@@ -33,7 +33,7 @@ public class Employee {
         return salary;
     }
 
-//    public static int getNextID() {
+    //    public static int getNextID() {
 //        return nextID;
 //    }
     public int getId() {
@@ -45,4 +45,3 @@ public class Employee {
         nextID++;
     }
 }
-

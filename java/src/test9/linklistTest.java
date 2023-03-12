@@ -29,7 +29,8 @@ public class linklistTest {
 
         while (bIter.hasNext())
         {
-            if(aIter.hasNext()) aIter.next();
+            if(aIter.hasNext())
+                aIter.next();
             aIter.add(bIter.next());
         }
 
